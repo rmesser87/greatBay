@@ -21,3 +21,9 @@ startingBid integer(10),
 currentBid integer(10),
 forSale boolean not null
 );
+
+insert into users (username, uPassword) values
+('rmesser', 'Password1'), ('dmfletcher', 'Password2'),('arovira', 'Password3');
+
+insert into items (sellerID, year, make, model, carCondition, mileage, startingBid, forSale) values
+(1, 1997, 'Honda', 'Accord', 'Fair', 100000, 2500, true), (2, 2007, 'Ford', 'Taurus', 'New', 90000, 500, true),(3, 2007, 'Toyota', 'Prius', 'Poor', 155000, 2000, true);
