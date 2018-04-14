@@ -1,14 +1,14 @@
 var mysql = require("mysql");
-var inquirer = requre("enquirer");
+var inquirer = requre("inquirer");
 var Table = require('cli-table');
 
 
 var connection = mysql.createConnection({
-    host: "",
+    host: "localhost",
     port: 3306,
     user: "root",
     password: "",
-    database: ""
+    database: "application_db"
 });
 
 connection.connect(function(err){
